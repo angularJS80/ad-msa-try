@@ -5,11 +5,11 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class CateAdapter(val cates: ArrayList<Cate>, val context: Context) : RecyclerView.Adapter<CateViewHolder>() {
+class CateAdapter(val cates: ArrayList<Cate>) : RecyclerView.Adapter<CateViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CateViewHolder {
-        return CateViewHolder(LayoutInflater.from(context).inflate(R.layout.cate_item, parent, false))
+        return CateViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.cate_item, parent, false))
     }
 
     override fun getItemCount(): Int {
