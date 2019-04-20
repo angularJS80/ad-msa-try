@@ -47,8 +47,14 @@ class HomeFragment : Fragment() {
     }
 
     private fun defineData() {
-        cates.add(Cate("1234","1234"))
-        cates.add(Cate("3333","3333"))
+        for (i in 1..4){
+            cates.add(Cate("coffee","1234",R.drawable.ic_coffee))
+            cates.add(Cate("juice","3333",R.drawable.ic_juice))
+            cates.add(Cate("bread","3333",R.drawable.ic_bread))
+            cates.add(Cate("tea","3333",R.drawable.ic_tea))
+
+        }
+
 
     }
 

@@ -10,7 +10,8 @@ class CateViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private var cate: Cate? = null
     fun bind(cate: Cate) {
         this.cate = cate
-        Picasso.with(itemView.context).load(cate.cateImageUrl).into(itemView.cate_image_url)
+        //Picasso.with(itemView.context).load(cate.cateImageUrl).into(itemView.cate_image)
+        itemView.cate_image.setImageResource(cate.draqableResourceId)
         itemView.cate_name.text = cate.cateName;
 
     }
